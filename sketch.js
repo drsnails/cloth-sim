@@ -180,6 +180,7 @@ function keyPressed() {
         gIsRunning = !gIsRunning
     } else if (key === 'r') {
         clearCloth()
+        generateClothGrid(...gClothGridData)
     } else if (key === 'g') {
         generateClothGrid(...gClothGridData)
     }
