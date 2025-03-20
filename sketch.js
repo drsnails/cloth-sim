@@ -178,10 +178,8 @@ function keyPressed() {
     if (key === ' ') {
         gPrevTime = Date.now()
         gIsRunning = !gIsRunning
-    } else if (key === 'r') {
+    } else if (key === 'r' || key === 'g') {
         clearCloth()
-        generateClothGrid(...gClothGridData)
-    } else if (key === 'g') {
         generateClothGrid(...gClothGridData)
     }
 }
